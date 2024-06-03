@@ -1,0 +1,472 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image {
+    background: url('IMG/fines.jpg') no-repeat center/cover;
+}
+
+header {
+    color: #fcfcfc;
+    padding: 40px 0;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header nav ul li a:hover {
+    color: #e97eff;
+    transition: 0.5s;
+}
+
+#hero {
+    margin: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 20px;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#hero .btn {
+    background: #ca48e4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+#benefits, #testimonials {
+    padding: 50px 0;
+}
+
+#benefits h2, #testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefit, .testimonial {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#testimonial-form {
+    margin-top: 20px;
+}
+
+#testimonial-form h3 {
+    margin-bottom: 10px;
+}
+
+#testimonial-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonial-form label {
+    margin: 10px 0 5px;
+}
+
+#testimonial-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#testimonial-form button {
+    padding: 10px;
+    background: #ca48e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#testimonial-form button:hover {
+    background: #b63cd9;
+    transition: 0.3s;
+}
+
+
+#testimonial-form {
+    margin-top: 20px;
+}
+
+#testimonial-form h3 {
+    margin-bottom: 10px;
+}
+
+#testimonial-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonial-form label {
+    margin: 10px 0 5px;
+}
+
+#testimonial-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#testimonial-form button {
+    padding: 10px;
+    background: #ca48e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#testimonial-form button:hover {
+    background: #b63cd9;
+    transition: 0.3s;
+}
+
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.login-register-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    perspective: 1000px;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.form-box {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+}
+
+.login-box {
+    transform: rotateY(0deg);
+}
+
+.register-box {
+    transform: rotateY(180deg);
+}
+
+#login-register .form-container.flipped {
+    transform: rotateY(180deg);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #ca48e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b63cd9;
+    transition: 0.3s;
+}
+
+p {
+    text-align: center;
+}
+
+p a {
+    color: #ca48e4;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+/* CSS para el contenedor del popup */
+.popup-container {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos anteriores */
+
+#exercise-plans {
+    padding: 50px 0;
+    text-align: center; /* Centra los elementos en el contenedor */
+}
+
+#exercise-plans h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.exercise-plan {
+    display: inline-block ;
+    width: calc(30%); /* Cada plan ocupa 1/3 del ancho del contenedor, con un margen de 20px */
+    margin: 10px; /* Ajusta el margen entre los planes */
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    vertical-align: top; /* Alinea los elementos en la parte superior del contenedor */
+    box-sizing: border-box; /* Asegura que el margen y el relleno se incluyan en el ancho */
+}
+
+.exercise-plan img {
+    width: 50px;
+    height: 50px;
+}
+.exercise-plan h3 {
+    margin: 10px 0 0;
+}
+
+.exercise-plan:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#exercise-plans h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para los planes existentes */
+.exercise-plan[data-plan="cardio"],
+.exercise-plan[data-plan="strength"],
+.exercise-plan[data-plan="flexibility"] {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.exercise-plan[data-plan="cardio"] img,
+.exercise-plan[data-plan="strength"] img,
+.exercise-plan[data-plan="flexibility"] img {
+    width: 50px;
+    height: 50px;
+}
+
+.exercise-plan[data-plan="cardio"] h3,
+.exercise-plan[data-plan="strength"] h3,
+.exercise-plan[data-plan="flexibility"] h3 {
+    margin: 10px 0 0;
+}
+
+/* Estilos específicos para cada plan */
+.exercise-plan[data-plan="cardio"] {
+    background-color: #ffd699;
+}
+
+.exercise-plan[data-plan="strength"] {
+    background-color: #99ccff;
+}
+
+.exercise-plan[data-plan="flexibility"] {
+    background-color: #d9ead3;
+}
+
+.exercise-plan[data-plan="yoga"],
+.exercise-plan[data-plan="core"],
+.exercise-plan[data-plan="agility"],
+.exercise-plan[data-plan="balance"] {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.exercise-plan[data-plan="yoga"] img,
+.exercise-plan[data-plan="core"] img,
+.exercise-plan[data-plan="agility"] img,
+.exercise-plan[data-plan="balance"] img {
+    width: 50px;
+    height: 50px;
+}
+
+.exercise-plan[data-plan="yoga"] h3,
+.exercise-plan[data-plan="core"] h3,
+.exercise-plan[data-plan="agility"] h3,
+.exercise-plan[data-plan="balance"] h3 {
+    margin: 10px 0 0;
+}
+
+/* Estilos específicos para yoga */
+.exercise-plan[data-plan="yoga"] {
+    background-color: #ffe6b3;
+}
+
+/* Estilos específicos para entrenamiento de core */
+.exercise-plan[data-plan="core"] {
+    background-color: #b3d9ff;
+}
+
+/* Estilos específicos para entrenamiento de agilidad */
+.exercise-plan[data-plan="agility"] {
+    background-color: #ffb3b3;
+}
+
+/* Estilos específicos para entrenamiento de equilibrio */
+.exercise-plan[data-plan="balance"] {
+    background-color: #c2f0c2;
+}
+

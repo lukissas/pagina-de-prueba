@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Plataforma de Fitness y Nutrición</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image">
+        <header>
+            <div class="container">
+                <h1>FitLife</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#benefits">Beneficios</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#exercise-plans">Planes de Ejercicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="hero">
+            <div class="container">
+                <h2>Bienvenido a FitLife</h2>
+                <p>Tu plataforma integral de Fitness y Nutrición. Descubre rutinas, planes de nutrición y sigue tu progreso.</p>
+                <a href="#login-register" class="btn">Únete Ahora</a>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const popupContainer = document.getElementById('popup-container');
+            const joinNowLink = document.querySelector('a[href="#login-register"]');
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'Cerrar';
+            closeButton.classList.add('close-button');
+
+            // Agregar evento de clic al enlace "Únete Ahora"
+            joinNowLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                popupContainer.style.display = 'block';
+                popupContainer.querySelector('.popup-content').appendChild(closeButton);
+            });
+
+            // Agregar evento de clic al botón de cerrar
+            closeButton.addEventListener('click', function() {
+                popupContainer.style.display = 'none';
+                popupContainer.querySelector('.popup-content').removeChild(closeButton);
+            });
+        });
+    </script>
+    
+    <section id="benefits" class="container">
+        <h2>Beneficios de FitLife</h2>
+        <div class="benefit">
+            <h3>Rutinas Personalizadas</h3>
+            <p>Encuentra rutinas adaptadas a tu nivel y objetivos.</p>
+        </div>
+        <div class="benefit">
+            <h3>Planes de Nutrición</h3>
+            <p>Accede a planes alimenticios diseñados por expertos.</p>
+        </div>
+        <div class="benefit">
+            <h3>Seguimiento de Progreso</h3>
+            <p>Registra tus avances y mantente motivado con estadísticas y gráficas.</p>
+        </div>
+    </section>
+    <section id="testimonials" class="container">
+        <h2>Testimonios y Casos de Éxito</h2>
+        <div class="testimonial">
+            <p>"FitLife me ayudó a alcanzar mis metas de forma efectiva y divertida!" - Juan Pérez</p>
+        </div>
+        <div class="testimonial">
+            <p>"La mejor plataforma para seguir una vida saludable." - Ana García</p>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="container">
+        <h2>Testimonios y Casos de Éxito</h2>
+        <div id="testimonial-list">
+            <div class="testimonial" data-user="anonimo">
+                <p>"FitLife me ayudó a alcanzar mis metas de forma efectiva y divertida!" - Juan Pérez</p>
+            </div>
+            <div class="testimonial" data-user="anonimo">
+                <p>"La mejor plataforma para seguir una vida saludable." - Ana García</p>
+            </div>
+        </div>
+        <div id="testimonial-form">
+            <h3>Añadir Testimonio</h3>
+            <form id="add-testimonial-form">
+                <label for="testimonial-text">Tu Testimonio</label>
+                <textarea id="testimonial-text" required></textarea>
+                <button type="submit">Agregar Testimonio</button>
+            </form>
+        </div>
+    </section>
+    <div id="popup-container" class="popup-container">
+        <div class="popup-content">
+    <section id="login-register" class="container">
+        <div class="login-register-box">
+            <div class="form-container">
+                <div class="form-box login-box">
+                    <h2>Login</h2>
+                    <form>
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                        <label for="login-password">Contraseña</label>
+                        <input type="password" id="login-password" required>
+                        <button type="submit">Iniciar Sesión</button>
+                    </form>
+                    <p>¿No tienes una cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+                </div>
+                <div class="form-box register-box">
+                    <h2>Registro</h2>
+                    <form>
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                        <label for="register-password">Contraseña</label>
+                        <input type="password" id="register-password" required>
+                        <button type="submit">Regístrate</button>
+                    </form>
+                    <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Inicia sesión aquí</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</div>
+
+<section id="exercise-plans" class="container">
+    <h2>Planes de Ejercicio</h2>
+    <div class="exercise-plan" data-plan="cardio">
+        <img src="IMG/cardio.png" alt="Cardio">
+        <h3>Cardio</h3>
+    </div>
+    <div class="exercise-plan" data-plan="strength">
+        <img src="IMG/strength.png" alt="Fuerza">
+        <h3>Fuerza</h3>
+    </div>
+    <div class="exercise-plan" data-plan="flexibility">
+        <img src="IMG/flexibility.png" alt="Flexibilidad">
+        <h3>Flexibilidad</h3>
+    </div>
+
+    <div class="exercise-plan" data-plan="yoga">
+        <img src="IMG/yoga.png" alt="Yoga">
+        <h3>Yoga</h3>
+    </div>
+    <div class="exercise-plan" data-plan="core">
+        <img src="IMG/core.png" alt="Entrenamiento de Core">
+        <h3>Entrenamiento de Core</h3>
+    </div>
+    <div class="exercise-plan" data-plan="agility">
+        <img src="IMG/agility.png" alt="Entrenamiento de Agilidad">
+        <h3>Entrenamiento de Agilidad</h3>
+    </div>
+    <div class="exercise-plan" data-plan="balance">
+        <img src="IMG/balance.png" alt="Entrenamiento de Equilibrio">
+        <h3>Entrenamiento de Equilibrio</h3>
+    </div>
+</section>
+
+
+
+
+    <!-- Modal para mostrar detalles del plan -->
+    <div id="plan-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="plan-details"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitLife. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
